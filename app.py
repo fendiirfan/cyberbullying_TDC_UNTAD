@@ -4,7 +4,7 @@ import streamlit as st
 st.title('Pencegahan Dini Terhadap Kasus Perundungan Melalui Tool Deteksi Cyberbullying di Media Digital')
 st.text("")
 st.text("")
-st.text("Masukan cuitan yang ingin diprediksi dibawah")
+st.text("Platfowm ini berfungsi untuk mendeteksi suatu kalimat dapat diklasifikasikan sebagai bullying atau tidak.\nDiharapkan dengan adanya tool ini kasus cyberbulllying di media digital bisa semakin turun\nhHormat kami Tim Anak dari Seberang")
 st.text("")
 
 # inputan user
