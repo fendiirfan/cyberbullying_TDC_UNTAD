@@ -46,5 +46,5 @@ if button==True:
         st.write('Prediksi : Kalimat '+ predict[1]+'\n' )
         
         # Proba Predict
-        st.write(f'Proba dari prediksi lasifikasi NORMAL : {np.around(predict[0][0][0],2)}')
-        st.write(f'Proba dari prediksi lasifikasi BULLYING : {np.around(predict[0][0][1],2)}')
+        st.write(f'Proba dari prediksi lasifikasi NORMAL : {np.around(predict[0][0][0],4)}')
+        st.write(f'Proba dari prediksi lasifikasi BULLYING : {np.around(predict[0][0][1],4)}')
