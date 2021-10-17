@@ -108,7 +108,8 @@ class model:
         }
         text = self.preprocessing()
         converted_text = self.convert_text(text)
-        return className[np.argmax(self.model.predict(converted_text))]
+        prediksi = self.model.predict(converted_text)
+        return [prediksi,className[np.argmax(prediksi)]]
 
 def progressBar(my_bar,start,end):
     for percent_complete in range(start,end):

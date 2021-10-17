@@ -1,10 +1,12 @@
 import model_app
 import streamlit as st
 
+
+
 st.title('Pencegahan Dini Terhadap Kasus Perundungan Melalui Tool Deteksi Cyberbullying di Media Digital')
 st.text("")
 st.text("")
-st.text("Platfowm ini berfungsi untuk mendeteksi suatu kalimat dapat diklasifikasikan sebagai bullying atau tidak.\nDiharapkan dengan adanya tool ini kasus cyberbulllying di media digital bisa semakin turun\nhHormat kami Tim Anak dari Seberang")
+st.text("Platfowm ini berfungsi untuk mendeteksi suatu kalimat dapat diklasifikasikan sebagai bullying atau tidak.\nDiharapkan dengan adanya tool ini kasus cyberbulllying di media digital bisa semakin turun\nHormat kami Tim Anak dari Seberang")
 st.text("")
 
 # inputan user
@@ -40,4 +42,8 @@ if button==True:
         model_app.progressBar(my_bar,70,100)
         
         # DISPLAY PREDICTION
-        st.write('Prediksi : Kalimat '+ predict )
+        st.write('Prediksi : Kalimat '+ predict[1]+'\n' )
+        
+        # Proba Predict
+        st.write(f'Proba dari prediksi lasifikasi NORMAL : {np.around(predict[0][0][0],2)}')
+        st.write(f'Proba dari prediksi lasifikasi BULLYING : {np.around(predict[0][0][1],2)}')
