@@ -6,8 +6,9 @@ st.text("")
 st.text("")
 st.text("")
 st.text("")
-st.text("Masukan cuitan yang ingin diprediksi dibawah")
 st.text("")
+st.text("")
+st.text("Masukan cuitan yang ingin diprediksi dibawah")
 st.text("")
 
 # inputan user
