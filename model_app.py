@@ -5,7 +5,6 @@ import re
 import string
 import time
 import pickle
-from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 class model:
     def __init__(self, selectedModel, text):
@@ -98,7 +97,7 @@ class model:
 
         x_sequences = tokenizer.texts_to_sequences([text])
         
-        return pad_sequences(x_sequences,maxlen = max_length, padding = padding_type, truncating = truncating_type)
+        return tf.keras.preprocessing.sequence.pad_sequences(x_sequences,maxlen = max_length, padding = padding_type, truncating = truncating_type)
 
 
     def predict_text(self):
